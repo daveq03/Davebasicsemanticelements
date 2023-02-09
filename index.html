@@ -5,36 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Semantic Layout Exercise</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <style>
-    
+    .nav__link{
+      
+    }
   </style>
-  
 
-  <body style="padding: 0%; margin: 0%;text-align: center;">
+  <body style="padding: 0%; margin: 0%; text-align: center">
     <!-- ***************header section***************** -->
-    <head style="background-color:blue;padding: 0%;margin: 0%;">
-        <h1>HEADER</h1>
-        <!-- ***************navigation section***************** -->
-        <nav style="background-color: lightblue;padding: 0%;margin: 0%;height: 20%;">
-            <ul style="list-style-type: none; height: 20px;">
-                <li class="nav__link"><a href="#">Home</a>></li>
-                <li class="nav__link"><a href="#">About</a>></li>
-                <li class="nav__link"><a href="#">Contact</a>></li>
-            </ul>
+    <header style="background-color: blue; padding: 0%; margin: 0%">
+      <h1>HEADER</h1>
+      <!-- ***************navigation section***************** -->
+      <nav
+        style="
+          background-color: lightblue;
+          padding: 0%;
+          margin: 0%;
+          height: 20%;
+        "
+      >
+        <ul style="list-style-type: none; height: 20px">
+          <li class="nav__link"><a href="#">Home</a>></li>
+          <li class="nav__link"><a href="#">About</a>></li>
+          <li class="nav__link"><a href="#">Contact</a>></li>
+        </ul>
+      </nav>
+    </header>
 
-        </nav>
-    </head>
-    
     <!-- ***************navigation section***************** -->
 
-
-     
     <!-- ***************main section***************** -->
-    <!-- *********section 1****** -->
-    <!-- ****article 1**** -->
+    <main style="background-color: pink;height: 50%;">
+      <!-- *********section 1****** -->
+      <h2>MAIN CONTENT</h2>
+      <section style="background-color: aquamarine; height: 50%;">
+        
+        <aside style="background-color: red; height: 100%; width: 30%; float: right;">
+        <h3>ASIDE</h3>
+        <ul>
+          <li>Unordered List item</li>
+          <li>Unordered List item</li>
+          <li>Unordered List item</li>
+          <li>Unordered List item</li>
+          <li>Unordered List item</li>
+        </ul>
+        <ol>
+          <li>ordered List item</li>
+          <li>ordered List item</li>
+          <li>ordered List item</li>
+          <li>ordered List item</li>
+          <li>ordered List item</li>
+        </ol>
+        <dl style="text-align: left;">
+          <dt>Coffee</dt>
+          <dd>Hot and cold</dd>
+          <dt>Milk Tea</dt>
+          <dd>COld and Sweet</dd>
 
-    <!-- *********section 2****** -->
-    <!-- ****article 1**** -->
+        </dl>
+
+        </aside>
+      <!-- *********section 2****** -->
+      <!-- ****article 1**** -->
+      <h3>SECTION 1</h3>
+      <article style="background-color: green; height: 50%;">
+        <h3>ARTICLE 1</h3>
+      </article>
+      </section>
+      <!-- section 2 -->
+      <section style="background-color: gray; height: 20%; margin: 5%;">
+        <h3>SECTION 2</h3>
+        <!-- article 2 -->
+        <h3 id="article2">ARTICLE 2</h3>
+        
+      </section>
+      
+    </main>
   </body>
 </html>
